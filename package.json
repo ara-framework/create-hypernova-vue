@@ -1,35 +1,25 @@
 {
-  "name": "hypernova-vue",
-  "version": "2.0.0",
-  "description": "Vue bindings for Hypernova",
-  "main": "lib/index.js",
-  "author": "Felipe Guizar Diaz <felipegaiacharly@gmail.com>",
-  "scripts": {
-    "prepublish": "npm run build",
-    "lint": "eslint src",
-    "build": "babel src -d lib"
-  },
-  "keywords": [
-    "vuew",
-    "hypernova",
-    "server",
-    "render"
-  ],
-  "license": "MIT",
+  "name": "sao-hypernova-vue",
+  "version": "0.0.0",
+  "description": "Hypernova with Vue.js boilerplate",
   "repository": {
-    "type": "git",
-    "url": "git@github.com:marconi1992/hypernova-vue.git"
+    "url": "marconi1992/sao-hypernova-vue",
+    "type": "git"
+  },
+  "author": "marconi1992 <felipegaiacharly@gmail.com> (github.com/marconi1992)",
+  "license": "MIT",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-airbnb": "^2.5.3",
-    "eslint": "^5.14.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
-  },
-  "peerDependencies": {
-    "hypernova": "^2.5.0",
-    "vue": "^2.6.6",
-    "vue-server-renderer": "^2.6.6"
+    "ava": "^0.25.0",
+    "sao": "^1.0.0"
   }
 }
