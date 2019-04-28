@@ -15,7 +15,7 @@ npm i -g sao
 ### From git
 
 ```bash
-sao marconi1992/sao-hypernova-vue my-project
+sao marconi1992/create-hypernova-vue my-project
 ```
 
 ## License
