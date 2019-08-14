@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "build": "webpack --mode production",
-    "predev": "yarn install",
     "dev": "webpack --watch --mode development",
     "start": "node dist/server.js"
   },
