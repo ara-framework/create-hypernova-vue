@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "hypernova": "^2.5.0",
-    "hypernova-vue": "^2.0.0",
+    "hypernova-vue": "^2.1.0",
     "vue": "^2.6.6",
     "vue-server-renderer": "^2.6.6"
   },
