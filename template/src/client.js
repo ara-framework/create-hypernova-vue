@@ -1,4 +1,20 @@
-import { renderVue, Vue } from 'hypernova-vue'
+import { load, Vue, mountComponent, loadById } from 'hypernova-vue'
 import Example from './components/Example.vue'
 
-renderVue('Example', Vue.extend(Example))
+const render = (name, { node, data }) => {
+  if (name) {
+    return mountComponent(Vue.extend(Example), node, data)
+  }
+}
+
+document.addEventListener('NovaMount', ({ detail }) => {
+  const { name, id } = detail
+
+  const payload = loadById(name, id)
+
+  if (payload) {
+    render(name, payload)
+  }
+})
+
+load('Example').forEach(render.bind(null, 'Example'))

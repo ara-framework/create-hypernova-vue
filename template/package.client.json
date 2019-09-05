@@ -3,15 +3,15 @@
   "description": "<%= description %>",
   "version": "0.0.0",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --watch --mode development",
-    "start": "node dist/server.js"
+    "webpack:build": "webpack --mode production",
+    "webpack:watch": "webpack --watch --mode development",
+    "serve": "http-server ./dist",
+    "dev": "npm-run-all --parallel webpack:watch serve"
   },
   "dependencies": {
     "hypernova": "^2.5.0",
     "hypernova-vue": "^3.0.0-alpha.0",
-    "vue": "^2.6.6",
-    "vue-server-renderer": "^2.6.6"
+    "vue": "^2.6.6"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -25,7 +25,7 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "nodemon-webpack-plugin": "^4.0.7",
+    "npm-run-all": "^4.1.5",
     "vue-loader": "^15.6.4",
     "vue-template-compiler": "^2.6.6",
     "webpack": "^4.29.5",
