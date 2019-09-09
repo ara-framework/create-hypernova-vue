@@ -1,5 +1,5 @@
 import hypernova from 'hypernova/server'
-import { renderVue, Vue } from 'hypernova-vue'
+import { renderVue, Vue } from 'hypernova-vue/server'
 import express from 'express'
 import path from 'path'
 
