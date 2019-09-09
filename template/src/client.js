@@ -2,7 +2,7 @@ import { load, Vue, mountComponent, loadById } from 'hypernova-vue'
 import Example from './components/Example.vue'
 
 const render = (name, { node, data }) => {
-  if (name) {
+  if (name === 'Example') {
     return mountComponent(Vue.extend(Example), node, data)
   }
 }
