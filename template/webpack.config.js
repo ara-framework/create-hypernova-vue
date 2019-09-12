@@ -32,7 +32,10 @@ const server = {
   plugins: [
     new VueLoaderPlugin(),
     new NodemonPlugin()
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.vue']
+  }
 }
 
 const client = {
@@ -69,7 +72,10 @@ const client = {
   },
   plugins: [
     new VueLoaderPlugin()
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.vue']
+  }
 }
 
 module.exports = [server, client]
